@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<header id="mastheadArea" class="sg_masthead">
+  <div class="sg_contain">
+    <div class="head">
+      <div class="title header typo_ostrich">{{ page.title }}</div>   
+      {% if page.info %}<div class="sub_title typo_crow">{{ page.info }}</div>{% endif %}
+    </div>
+    {% if page.nav == true %}<aside id="nav">
+      <div class="header typo_hummingbird">Contents</div>
+      <ul></ul>
+    </aside>{% endif %}
+  </div>
+</header>
+<article id="documentationArea" class="sg_doc">
+  <div class="sg_contain">
+    {{ content }}
+  </div>
+</article>

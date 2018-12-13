@@ -1,0 +1,98 @@
+// Pattern Helper Controls
+.sg_pattern_control {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: $margin_huge;
+  transition: all $base-duration $base-timing;
+
+  @media only screen and (max-width: $large_screen) {
+    margin-bottom: $m_margin_huge;
+  }
+
+  &:before {
+    content: attr(data-styles);
+    font-size: $typo_hummingbird;
+    font-weight: 700;
+    margin: 0 $margin_small 0 0;
+    align-self: center;
+    margin-right: auto;
+    color: $color-silver;
+    transition: all $base-duration $base-timing;
+  }
+  .button {
+    padding: 0 $margin_small;
+    color: $color-silver;
+    transition: all $base-duration $base-timing;
+
+    &:hover {
+      color: $blue !important;
+    }
+
+    .icon {
+      margin-right: 0;
+    }
+  }
+}
+
+
+// Pattern display
+.sg_pattern {
+  position: relative;
+  margin-bottom: $margin_huge;
+  margin-top: $margin_huge;
+  padding-top: $margin_huge;
+  border-top: $base-border;
+
+  @media only screen and (max-width: $large_screen) {
+    margin-bottom: $m_margin_huge;
+    margin-top: $m_margin_huge;
+    padding-top: $m_margin_huge;
+  }
+
+  // Pattern title
+  .title {
+    display: flex;
+    align-items: center;
+
+    a.permalink {
+      margin-left: -$margin * 2;
+      opacity: 0;
+      color: $subheading-font-color;
+      transition: all $base-duration $base-timing;
+
+      @media only screen and (max-width: $large_screen) {
+        display: none;
+      }
+
+      &:hover {
+        color: $blue;
+      }
+    }
+    .header {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .sg_label {
+      margin-left: $margin;
+    }
+  }
+  // Active/Hover State
+  &:hover,
+  &.active {
+    a.permalink {
+      opacity: 1;
+    }
+    .sg_pattern_control {
+      &:before,
+      .button {
+        color: $subheading-font-color;
+      }
+    }
+  }
+
+  // Spacing for next patterns
+  &:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+}

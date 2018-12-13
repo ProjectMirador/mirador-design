@@ -1,0 +1,118 @@
+.sg_sidebar {
+  color: $white;
+  background: $color-oxford-blue;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    border-top: 1px solid transparentize($white, 0.8);
+    line-height: $heading-line-height;
+  }
+  a:not(.logo) {
+    text-transform: capitalize;
+    display: block;
+    color: transparentize($white, 0.15);
+    font-size: $typo_sparrow;
+    font-weight: 700;
+    text-decoration:none;
+    padding: $margin_small/3 0;
+    padding: $margin;
+    padding-left: $margin_large;
+    transition: all $base-timing $base-duration;
+    // margin-left: $margin_small;
+
+    // &:before {
+    //   @extend .icon;
+    //   content: 'remove';
+    //   display: inline-block;
+    //   line-height: 1;
+    //   vertical-align: text-top;
+    //   margin-right: $margin_small;
+    //   margin-left: - $margin_large;
+    // }
+    // &.active:before {
+    //   content: 'arrow_forward';
+    // }
+
+    &:hover,
+    &.active {
+      color: $white;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: $margin_large $margin;
+    color: $white;
+    text-transform: capitalize;
+    font-size: $typo_sparrow;
+    font-weight: 700;
+    text-decoration:none;
+
+    .icon {
+      height: 3rem;
+      width: 3rem;
+      flex: 0 0 auto;
+      margin-right: $margin;
+      overflow: hidden;
+
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    .title {
+      font-size: $typo_crow;
+      margin: 0 auto;
+    }
+  }
+  .group {
+    border-top: 1px solid transparentize($white, 0.8);
+    padding-bottom: $margin;
+
+    .group_title {
+      font-size: $typo_hummingbird;
+      font-weight: 700;
+      padding: $margin;
+      padding-bottom: $margin_small;
+      padding-left: $margin_large;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+    li {
+      border-top: none;
+
+      a {
+        padding: $margin_small/2 $margin;
+        padding-left: $margin_large;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .sg-pages li {
+    > a {
+      padding-bottom: $margin_small/2;
+      padding-top: $margin;
+    }
+
+    &:not(:first-child) {
+      border-top: 0;
+
+      > a {
+        padding-top: $margin_small/2;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// Maturity Label
+.sg_label {
+  display: inline;
+  font-size: $typo_hummingbird;
+  margin: 0;
+  font-weight: bold;
+  border-radius: $base-border-radius;
+  padding: .2rem .6rem;
+  line-height: $heading-line-height;
+  color: $subheading-font-color;
+  text-transform: uppercase;
+  background: $smoke;
+
+  &.planned {background: $red; color: $white;}
+  &.draft {background: $amber; color: $white;}
+  &.ready {background: $green; color: $white;}
+  &.retired {background: $grey; color: $white;}
+}

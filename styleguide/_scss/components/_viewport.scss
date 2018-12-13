@@ -1,0 +1,22 @@
+// Viewport Area
+.sg_viewport {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-image: url(../images/loader.svg);
+  background-position: center center;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  margin-top: $margin_huge;
+  
+  @media only screen and (max-width: $large_screen) {
+    margin-top: $m_margin_huge;
+  }
+
+  iframe {
+    width: 1px;
+    min-width: 100%;
+    min-height: 100px;
+    opacity: 0;
+  }
+}

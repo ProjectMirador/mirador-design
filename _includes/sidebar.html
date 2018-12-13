@@ -1,0 +1,41 @@
+<a href="javascript:void(0)" class="sg_sidebar_button"><i class="icon" data-icon="menu"></i></a>
+<div class="sg_sidebar">
+  <a href="{{ site.baseurl }}/index.html" class="logo">
+    <div class="title">{{ site.sg_title }}</div>
+  </a>
+  <ul>
+    <li><a href="{{ site.baseurl }}/index.html"{% if page.url == '/' %} class="active"{% endif %}>Overview</a></li>
+  </ul>
+  {% assign about = site.docs | where: 'type', 'about' | sort: 'url' %}
+  <div class="group">
+    <div class="group_title">About</div>
+    <ul>{% for doc in about %}
+      <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+    {% endfor %}</ul>
+  </div>
+  {% assign foundations = site.docs | where: 'type', 'foundation' | sort: 'url' %}
+  <div class="group">
+    <div class="group_title">Foundations</div>
+    <ul>{% for doc in foundations %}
+      <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+    {% endfor %}</ul>
+  </div>
+  {% assign components = site.docs | where: 'type', 'component' | sort: 'url' %}
+  <div class="group">
+    <div class="group_title">Elements</div>
+    <ul>{% for doc in components %}
+      <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+    {% endfor %}</ul>
+  </div>
+  {% assign templates = site.docs | where: 'type', 'template' | sort: 'url' %}
+  <div class="group">
+    <div class="group_title">Patterns</div>
+    <ul>{% for doc in templates %}
+      <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+    {% endfor %}</ul>
+  </div>
+  {% assign samples = site.docs | where: 'type', 'sample' | sort: 'url' %}
+  <ul class="sg-pages">{% for doc in samples %}
+    <li><a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a></li>
+  {% endfor %}</ul>
+</div>

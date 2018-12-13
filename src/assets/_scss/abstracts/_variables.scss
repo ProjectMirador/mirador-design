@@ -1,0 +1,39 @@
+// Devices
+$medium-screen: 1080px;
+$tablet-screen: 768px;
+$mobile-screen: 480px;
+
+// Type Systems
+$roboto: 'Roboto', sans-serif;
+$robotoslab: 'Roboto Slab', serif;
+
+
+// Font Size
+$typo_lion: 2.6rem;
+$typo_panther: 1.8rem;
+$typo_leopard: 1.3rem; 
+$typo_cat: 1rem; 
+$typo_kitten: .8rem;
+
+// Primary Colors
+$white: #ffffff;
+$black: #222222;
+$pink: hotpink;
+
+// Accent Colors
+$blue: lightskyblue;
+$green: lightseagreen;
+
+// Base Fonts
+$base-font-size: 18px;
+$base-line-height: 1.6;
+$base-font-color: $black;
+
+// Headline Fonts
+$headline-line-height: 1.3;
+$headline-font-color: darken($base-font-color, 10%);
+
+// Padding
+$large-pad: 1.5rem;
+$base-pad: 1rem;
+$small-pad: $large-pad / 2; //0.75rem

@@ -1,0 +1,37 @@
+h1,h2,h3,h4,h5,h6,
+ul,ol,dd,
+p,figure,
+table,fieldset,hr {
+  margin-bottom: $base-pad;
+}
+
+.headline,
+h1, h2, h3, h4, h5, h6 {
+  line-height: $headline-line-height;
+  color: $headline-font-color;
+  font-family: $robotoslab;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: $typo_lion;
+  margin-bottom: $base-pad;
+}
+
+h2 {
+  font-size: $typo_panther;
+  margin-bottom: $base-pad;
+}
+
+h3 {
+  font-size: $typo_leopard;
+  margin-bottom: $base-pad;
+}
+
+h4 {
+  font-family: $roboto;
+  font-size: $typo_cat;
+  margin-bottom: $base-pad;
+  text-transform: uppercase;
+  color: $pink;
+}

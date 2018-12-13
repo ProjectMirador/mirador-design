@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+ <html id="sg" {% if site.sg_language %} lang="{{ site.sg_language }}"{% endif %}>
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.sg_title %}{{ page.sg_title }} | {% endif %}{{ site.sg_title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.sg_description }}{% endif %}">
+    <meta name="keywords" content="{{ site.sg_keywords }}">
+    <meta name="author" content="{{ site.sg_author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}{{ site.sg_favicon }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}{{ site.sg_styles }}" media="screen">
+    <script src="{{ site.baseurl }}/styleguide/js/libs/jquery-2.1.4.min.js"></script>
+    {% if site.sg_ga %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.sg_ga }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+  </head>
+  <body id="sg">
+    <div class="sg-pusher">
+      {% include sidebar.html %}
+      <main class="sg-main">
+        {{ content }}
+      </main>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

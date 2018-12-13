@@ -1,0 +1,94 @@
+// Devices
+$extended_screen: 1400px;
+$large_screen: 1200px;
+$medium_screen: 800px;
+$small_screen: 480px;
+
+// Navigation Rails
+$left_rail: 240px;
+$right_rail: 300px;
+
+// Type Systems
+$sans-serif: 'HKGrotesk', sans-serif;
+$base-font-family: 'HKGrotesk', sans-serif;
+$icon: 'Material Icons';
+$code: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+
+// Font Sizing
+$base-font-size: 16px;
+$base-line-height: 1.6;
+$heading-line-height: 1.25;
+
+// Font Sizes
+$typo_ostrich: 3rem;
+$typo_albatros: 2.2rem;
+$typo_eagle: 1.8rem;
+$typo_hawk: 1.5rem;
+$typo_crow: 1.25rem;
+$typo_sparrow: 1rem;
+$typo_hummingbird: .875rem;
+
+// Mobile Font Sizes
+$m_typo_ostrich: 2rem;
+$m_typo_albatros: 1.8rem;
+$m_typo_eagle: 1.4rem;
+$m_typo_hawk: 1.25rem;
+
+// Special Fonts
+$micro-font-size: 70%;
+$small-font-size: 80%;
+
+// Brand Colors
+$white: #ffffff;
+$smoke: whitesmoke;
+$red: orangered;
+$blue: dodgerblue;
+$green: #16b491;
+$amber: orange;
+$grey: lightgrey;
+
+$color-vermilion-lighter: rgb(244, 151, 138) !default;
+$color-vermilion-darker: rgb(154, 31, 14) !default;
+$color-bleu-de-france-dark: rgb(16, 112, 209) !default;
+$color-bleu-de-france-light: rgb(84, 163, 242) !default;
+$color-silver: rgb(127, 136, 145) !default;
+$color-white: rgb(255, 255, 255) !default;
+$color-bleu-de-france: rgb(37, 138, 239) !default;
+$color-bleu-de-france-darker: rgb(12, 87, 161) !default;
+$color-bleu-de-france-lighter: rgb(132, 189, 246) !default;
+$color-ucla-gold-dark: rgb(230, 164, 0) !default;
+$color-vermilion-light: rgb(239, 101, 82) !default;
+$color-vermilion-dark: rgb(201, 40, 19) !default;
+$color-rich-black: rgb(0, 17, 35) !default;
+$color-cloud: rgb(233, 243, 253) !default;
+$color-oxford-blue: rgb(0, 38, 77) !default;
+$color-vermilion: rgb(235, 59, 36) !default;
+
+// Animations
+$base-duration: .2s;
+$base-timing: ease;
+
+// Base Colors
+$base-font-color: #222222;
+$heading-font-color: #0a0a0a;
+$subheading-font-color: $color-silver;
+
+// Code Color
+$code-color: #0a0a0a;
+$code-font-color: #ffffff;
+
+// Borders
+$base-border-radius: 1rem;
+$base-border: 1px solid $smoke;
+
+// Margins
+$margin: 1rem;
+$margin_small: .5rem;
+$margin_large: 1.5rem;
+$margin_huge: 3rem;
+$margin_massive: 4.5rem;
+
+
+// Mobile Margins
+$m_margin_huge: 1.5rem;
+$m_margin_massive: 3rem;

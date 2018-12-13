@@ -1,0 +1,74 @@
+// Typography Settings
+.typo_ostrich {font-size: $typo_ostrich;}
+.typo_albatros {font-size: $typo_albatros;}
+.typo_eagle {font-size: $typo_eagle;}
+.typo_hawk {font-size: $typo_hawk;}
+.typo_crow {font-size: $typo_crow;}
+.typo_sparrow {font-size: $typo_sparrow;}
+.typo_hummingbird {font-size: $typo_hummingbird;}
+
+ul,ol,dd,
+p,figure,
+table,fieldset,hr
+{
+  margin:0;
+  margin-bottom: $margin;
+}
+
+blockquote {
+  margin: $margin_large 0;
+  padding-left: 2rem;
+
+  .icon:first-child {
+    font-size: $margin_large;
+    line-height: 1;
+    margin-left: -2rem;
+  }
+}
+
+.header,
+h1, h2, h3, h4, h5, h6 {
+  line-height: $heading-line-height;
+  margin-bottom: $margin;
+  color: $heading-font-color;
+  font-weight: 600;
+  margin-top: $margin_huge;
+}
+
+h1 {
+  font-size: $typo_ostrich;
+}
+
+h2 {
+  font-size: $typo_albatros;
+}
+
+h3,h4,h5,h6 {
+  font-size: $typo_eagle;
+}
+
+.header,
+h1 {
+  margin-top: $margin_large;
+}
+
+// Mobile sizes
+@media only screen and (max-width: $large_screen) {
+
+  .typo_ostrich {font-size: $m_typo_ostrich;}
+  .typo_albatros {font-size: $m_typo_albatros;}
+  .typo_eagle {font-size: $m_typo_eagle;}
+  .typo_hawk {font-size: $m_typo_hawk;}
+
+  h1 {
+  font-size: $m_typo_ostrich;
+  }
+
+  h2 {
+    font-size: $m_typo_albatros;
+  }
+
+  h3,h4,h5,h6 {
+    font-size: $m_typo_eagle;
+  }
+}
