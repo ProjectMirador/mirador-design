@@ -13,8 +13,9 @@ kramdown:
 port: 4000
 
 ## Output
-siteurl:                    ## Optional
-baseurl:                    ## Optional
+repository: ProjectMirador/mirador-design
+url: https://projectmirador.github.io
+baseurl: /mirador-design
 destination: _site          ## Output folder
 
 
@@ -30,7 +31,6 @@ sg_description: This Mirador 3 Style Guide is intended to document styles and pr
 sg_language: en
 sg_styles: /styleguide/css/styleguide.css
 sg_favicon: /styleguide/branding/favicon.ico
-# sg_ga: UA-19247091-8      ## Analytics Tracking
 
 ## Generates Style Guide Shell Styles
 ## Enable to change the style guide shell stylesheet.

@@ -32,8 +32,8 @@ The table below lists all UI patterns in the style guide and their current devel
     {% for pattern in patterns %}
     {% assign anchor = pattern.title | slugify | prepend: '#' %}
     {% assign group = pattern.url  | split: '/'  | slice: -2, 1 %}
-    {% assign folder = pattern.url | split: '/' | slice: 3, 2 | join: '/' | prepend: '/docs/' | prepend: relative_url | append: '.html' | append: anchor %}
-      <a href="{{ relative_url }}{{ folder }}" class="sg_roadmap_pattern tableRow">
+    {% assign folder = pattern.url | split: '/' | slice: 3, 2 | join: '/' | prepend: '/docs/' | append: '.html' | append: anchor %}
+      <a href="{{ site.baseurl }}{{ folder}}" class="sg_roadmap_pattern tableRow">
         <div class="tableCell">
           <div class="sg_label maturity {{ pattern.maturity }}" data-maturity="{{ pattern.maturity }}"></div>
         </div>
