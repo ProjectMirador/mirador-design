@@ -1,0 +1,19 @@
+// Tables
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid #999999;
+}
+
+th {
+    background-color: #eeeeee;
+    border: 2px solid #999999;
+    padding-left: 6px;
+    padding-right: 20px;
+}
+
+td {
+    border: 1px solid #999999;
+    padding-left: 6px;
+    padding-right: 20px;
+}
