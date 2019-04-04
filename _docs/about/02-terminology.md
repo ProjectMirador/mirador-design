@@ -3,16 +3,12 @@ title: Terminology
 info: Definition of key terms to encourage common understanding and usage.
 ---
 
-## Components
+## Diagrams
 
-* Catalog
-* Workspace
-* Window
-* Collection
-* Album
-* Item
-* Sequence
+![image-title-here]({{ site.baseurl }}/styleguide/images/Map@2x.png)
 
-## Diagram
+![image-title-here]({{ site.baseurl }}/styleguide/images/Map-A@2x.png)
 
-* _shows how main Mirador elements are named and how they fit together_
+![image-title-here]({{ site.baseurl }}/styleguide/images/Map-B@2x.png)
+
+![image-title-here]({{ site.baseurl }}/styleguide/images/Map-C@2x.png)
