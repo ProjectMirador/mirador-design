@@ -1,6 +1,6 @@
 # Mirador 3 Style Guide
 
-This Mirador 3 Style Guide is intended to document styles and processes related to the design and development of Mirador 3.
+This [Mirador 3 style guide](https://projectmirador.github.io/mirador-design/) is intended to document styles and processes related to the design and development of Mirador 3.
 
 This style guide is currently just a prototype. It's intended for determining the potential value of a style guide for Mirador 3 design and development and how such a style guide might be structured. It's based on [Jekyll](http://jekyllrb.com/) and was selected based on the ease of updating (most pages can be written in Markdown) and deploying.
 
